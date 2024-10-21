@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#chat-container {
+    width: 400px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+}
+
+#chat-output {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #eee;
+}
+
+#chat-input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #007bff; /* Cambia il bordo per renderlo più visibile */
+    width: 80%; /* Modifica la larghezza per evitare conflitti */
+    background-color: #fff; /* Imposta uno sfondo bianco */
+    color: #000; /* Imposta il colore del testo */
+}
+
+
+#send-button, #voice-button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#send-button {
+    width: 80px; /* Dimensione personalizzata per il pulsante Invia */
+}
+
+#voice-button {
+    width: 50px; /* Dimensione del pulsante per ospitare l'icona */
+    height: 50px; /* Altezza regolata per rendere il pulsante simile a un'icona */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
